@@ -8,6 +8,8 @@ import WorkExperience from "./components/WorkExperience";
 import Contact from "./components/Contact";
 
 import Banner from "./assets/SimpleOmbre.png";
+import Test from "./assets/Banner-centered.png";
+
 function App() {
   return (
     <Router>
@@ -18,6 +20,7 @@ function App() {
         </Routes>
         <div className="content">
           <img src={Banner} style={{ width: "100%" }} />
+          <img src={Test} style={{ width: "100%" }} />
         </div>
       </div>
     </Router>
