@@ -1,4 +1,6 @@
 // import { Nav, NavLink, Bars, NavMenu } from "./NavBarElements";
+import Logo from "../assets/Logo/GrayLogo.png";
+
 //React Imports
 import React, { useEffect, useState } from "react";
 
@@ -9,19 +11,36 @@ import ToolBar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
+import Box from "@material-ui/core/Box";
 import MenuIcon from "@material-ui/icons/Menu";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  logo: {
+    height: 70,
+    marginRight: 10,
+    marginLeft: -30,
+  },
   menuButton: {
     marginRight: theme.spacing(2),
     color: "black",
   },
-  title: {
+  projects: {
     flexGrow: 1,
     color: "black",
+    fontSize: 13,
+  },
+  work: {
+    flexGrow: 1,
+    color: "black",
+    fontSize: 13,
+  },
+  contact: {
+    flexGrow: 1,
+    color: "black",
+    fontSize: 13,
   },
   appBarTransparent: {
     backgroundColor: "rgba(67,129,168,0.5)",
@@ -59,13 +78,22 @@ const Navbar = () => {
     <div>
       <AppBar position="fixed" className={classes.appBarTransparent}>
         <ToolBar>
-          <IconButton className={classes.menuButton}>
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
+          <Box component="img" className={classes.logo} src={Logo} />
+          <Typography variant="h6" className={classes.projects}>
             {" "}
             Projects
           </Typography>
+          <Typography variant="h6" className={classes.work}>
+            {" "}
+            Work Experience
+          </Typography>
+          <Typography variant="h6" className={classes.contact}>
+            {" "}
+            Contact Me
+          </Typography>
+          <IconButton className={classes.menuButton}>
+            <MenuIcon />
+          </IconButton>
         </ToolBar>
       </AppBar>
     </div>

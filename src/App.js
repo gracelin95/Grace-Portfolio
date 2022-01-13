@@ -10,8 +10,22 @@ import Contact from "./components/Contact";
 import Banner from "./assets/SimpleOmbre.png";
 import Test from "./assets/Banner-centered.png";
 
+//material ui
+// import { MuiThemeProvider, createMuiTheme } from "@material-ui/styles";
+
 function App() {
+  // const THEME = createMuiTheme({
+  //   typography: {
+  //     fontFamily: `'Sora', sans-serif`,
+  //     fontSize: 13,
+  //     fontWeightLight: 300,
+  //     fontWeightRegular: 400,
+  //     fontWeightMedium: 500,
+  //   },
+  // });
+
   return (
+    // <MuiThemeProvider theme={THEME}>
     <Router>
       <div className="App">
         <Navbar />
@@ -24,6 +38,7 @@ function App() {
         </div>
       </div>
     </Router>
+    // </MuiThemeProvider>
   );
 }
 
