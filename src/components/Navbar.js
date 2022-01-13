@@ -43,10 +43,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 13,
   },
   appBarTransparent: {
-    backgroundColor: "rgba(67,129,168,0.5)",
+    backgroundColor: "rgba(255,255,255,0.5)",
   },
   appBarSolid: {
-    backgroundColor: "rgba(67,129,169)",
+    backgroundColor: "#F1D8C6",
   },
 }));
 
