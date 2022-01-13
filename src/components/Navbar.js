@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     height: 70,
     marginRight: 10,
     marginLeft: -30,
+    marginBottom: 10,
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -31,19 +32,23 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     color: "black",
     fontSize: 13,
+    marginBottom: 10,
   },
   work: {
     flexGrow: 1,
     color: "black",
     fontSize: 13,
+    marginBottom: 10,
   },
   contact: {
     flexGrow: 1,
     color: "black",
     fontSize: 13,
+    marginBottom: 10,
   },
   appBarTransparent: {
     backgroundColor: "rgba(255,255,255,0.5)",
+    height: 50,
   },
   appBarSolid: {
     backgroundColor: "#F1D8C6",

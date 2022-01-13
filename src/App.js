@@ -7,8 +7,7 @@ import Projects from "./components/Projects";
 import WorkExperience from "./components/WorkExperience";
 import Contact from "./components/Contact";
 
-import Banner from "./assets/SimpleOmbre.png";
-import Test from "./assets/Banner-centered.png";
+import Banner from "./assets/Banner.png";
 
 //material ui
 // import { MuiThemeProvider, createMuiTheme } from "@material-ui/styles";
@@ -34,7 +33,6 @@ function App() {
         </Routes>
         <div className="content">
           <img src={Banner} style={{ width: "100%" }} />
-          <img src={Test} style={{ width: "100%" }} />
         </div>
       </div>
     </Router>
