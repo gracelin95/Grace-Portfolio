@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 import WorkExperience from "./components/WorkExperience";
 import Contact from "./components/Contact";
 
-import Banner from "./assets/Banner-centered.png";
+import Banner from "./assets/SimpleOmbre.png";
 function App() {
   return (
     <Router>
