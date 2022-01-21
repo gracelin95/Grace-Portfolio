@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  logoBox: {
+    flexGrow: 15,
+  },
   logo: {
     height: 70,
     marginRight: 10,
@@ -27,6 +30,19 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
     color: "black",
+    display: "block",
+    position: "absolute",
+    top: 0,
+    right: 0,
+    // transform: translate(-100%, 75%)
+    // @media screen and (max-width: 768px) {
+    //   display: block;
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   transform: translate (-100%, 75%);
+    //   font-size: 1.8rem;
+    //   cursor: pointer;
   },
   projects: {
     flexGrow: 1,
@@ -41,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 10,
   },
   contact: {
-    flexGrow: 1,
+    flexGrow: 2,
     color: "black",
     fontSize: 13,
     marginBottom: 10,
@@ -83,7 +99,9 @@ const Navbar = () => {
     <div>
       <AppBar position="fixed" className={classes.appBarTransparent}>
         <ToolBar>
-          <Box component="img" className={classes.logo} src={Logo} />
+          <div className={classes.logoBox}>
+            <Box component="img" className={classes.logo} src={Logo} />
+          </div>
           <Typography variant="h6" className={classes.projects}>
             {" "}
             Projects
