@@ -8,7 +8,7 @@ import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import ToolBar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
+//import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import Box from "@material-ui/core/Box";
@@ -28,36 +28,26 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 10,
   },
   menuButton: {
-    marginRight: theme.spacing(2),
     color: "black",
     display: "block",
     position: "absolute",
     top: 0,
     right: 0,
-    // transform: translate(-100%, 75%)
-    // @media screen and (max-width: 768px) {
-    //   display: block;
-    //   position: absolute;
-    //   top: 0;
-    //   right: 0;
-    //   transform: translate (-100%, 75%);
-    //   font-size: 1.8rem;
-    //   cursor: pointer;
   },
   projects: {
-    flexGrow: 1,
+    flexGrow: 0.5,
     color: "black",
     fontSize: 13,
     marginBottom: 10,
   },
   work: {
-    flexGrow: 1,
+    flexGrow: 0.5,
     color: "black",
     fontSize: 13,
     marginBottom: 10,
   },
   contact: {
-    flexGrow: 2,
+    flexGrow: 0.5,
     color: "black",
     fontSize: 13,
     marginBottom: 10,
@@ -102,18 +92,18 @@ const Navbar = () => {
           <div className={classes.logoBox}>
             <Box component="img" className={classes.logo} src={Logo} />
           </div>
-          <Typography variant="h6" className={classes.projects}>
+          <Button variant="h6" className={classes.projects}>
             {" "}
             Projects
-          </Typography>
-          <Typography variant="h6" className={classes.work}>
+          </Button>
+          <Button variant="h6" className={classes.work}>
             {" "}
             Work Experience
-          </Typography>
-          <Typography variant="h6" className={classes.contact}>
+          </Button>
+          <Button variant="h6" className={classes.contact}>
             {" "}
             Contact Me
-          </Typography>
+          </Button>
           <IconButton className={classes.menuButton}>
             <MenuIcon />
           </IconButton>
