@@ -31,11 +31,12 @@ function App() {
               alignItems: "center",
             }}
           >
-            <FaGithub size={35} src="https://github.com/gracelin95" />{" "}
-            <FaLinkedin
-              size={35}
-              src="https://www.linkedin.com/in/gracesqlin/"
-            />
+            <a href="https://github.com/gracelin95">
+              <FaGithub size={30} />{" "}
+            </a>
+            <a href="https://www.linkedin.com/in/gracesqlin/">
+              <FaLinkedin size={30} />
+            </a>
           </div>
         </div>
       </div>
