@@ -1,12 +1,9 @@
 // import { Nav, NavLink, Bars, NavMenu } from "./NavBarElements";
-import Logo from "../assets/Logo/GrayLogo.png";
+import Logo from "../../assets/Logo/GrayLogo.png";
 
 //React Imports
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-//Component Imports
-import Projects from "./Projects";
 
 //Material UI Imports
 import { makeStyles } from "@material-ui/core/styles";

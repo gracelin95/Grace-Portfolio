@@ -2,10 +2,10 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //component imports
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import WorkExperience from "./components/WorkExperience";
-import Contact from "./components/Contact";
+import Navbar from "./components/Navbar/Navbar";
+import Projects from "./components/Projects/Projects";
+import WorkExperience from "./components/Work/WorkExperience";
+import Contact from "./components/Contact/Contact";
 
 import Banner from "./assets/Banner.png";
 
