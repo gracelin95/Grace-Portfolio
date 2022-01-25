@@ -47,10 +47,10 @@
 
 @media screen and (min-width: 400px) {
   .icons {
-    position: absolute;
+    /* position: absolute; */
     justify-content: center;
     display: flex;
-    top: 40%;
+    top: 50%;
     left: 0;
     right: 0;
     bottom: 0;
