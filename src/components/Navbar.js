@@ -3,12 +3,15 @@ import Logo from "../assets/Logo/GrayLogo.png";
 
 //React Imports
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+//Component Imports
+import Projects from "./Projects";
 
 //Material UI Imports
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import ToolBar from "@material-ui/core/Toolbar";
-//import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import Box from "@material-ui/core/Box";
@@ -92,18 +95,24 @@ const Navbar = () => {
           <div className={classes.logoBox}>
             <Box component="img" className={classes.logo} src={Logo} />
           </div>
-          <Button variant="h6" className={classes.projects}>
-            {" "}
-            Projects
-          </Button>
-          <Button variant="h6" className={classes.work}>
-            {" "}
-            Work Experience
-          </Button>
-          <Button variant="h6" className={classes.contact}>
-            {" "}
-            Contact Me
-          </Button>
+          <Link to="/projects" style={{ textDecoration: "none" }}>
+            <Button variant="h6" className={classes.projects}>
+              Projects
+            </Button>
+          </Link>
+          <Link to="/workexperience" style={{ textDecoration: "none" }}>
+            <Button variant="h6" className={classes.work}>
+              {" "}
+              Work Experience
+            </Button>
+          </Link>
+          <Link to="/contactme" style={{ textDecoration: "none" }}>
+            <Button variant="h6" className={classes.contact}>
+              {" "}
+              Contact Me
+            </Button>
+          </Link>
+
           <IconButton className={classes.menuButton}>
             <MenuIcon />
           </IconButton>
