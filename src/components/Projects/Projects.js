@@ -1,3 +1,6 @@
+//CSS import
+import "./project.css";
+
 //Project Image Imports
 import Oishii from "../../assets/Projects/Oishii.png";
 import Bizarr from "../../assets/Projects/bizarr.png";
@@ -9,12 +12,20 @@ import Bizarr from "../../assets/Projects/bizarr.png";
 const Projects = () => {
   return (
     <div>
-      {/* <Card>
-        <CardMedia component="img" image="Oishii.png" alt="oishii" />
-      </Card> */}
-      <div className="project-img">
-        <img src={Oishii} width="50%" className="oishii" />
-        <img src={Bizarr} width="50%" className="bizarr" />
+      <h2 className="headline"> Projects </h2>
+      <div className="project-imgs">
+        <a
+          href="https://github.com/Winternet-is-coming/GraceShopper"
+          target="_blank"
+        >
+          <img src={Oishii} className="oishii-img" />
+        </a>
+        <a
+          href="https://github.com/04-cs-2109-compoutine/Bizarr"
+          target="_blank"
+        >
+          <img src={Bizarr} className="bizarr-img" />
+        </a>
       </div>
     </div>
   );
