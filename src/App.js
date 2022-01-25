@@ -32,7 +32,8 @@ function App() {
               <FaLinkedin size={32} style={{ color: "black" }} />
             </a>
           </div>
-          <h1>Projects</h1>
+          <Projects />
+          <WorkExperience />
         </div>
       </div>
     </Router>
