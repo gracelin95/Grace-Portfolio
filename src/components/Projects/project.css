@@ -3,11 +3,16 @@
 }
 
 .oishii-img {
-  width: 50%;
-  padding: 20px;
+  width: 33%;
+  padding: 10px;
 }
 
 .bizarr-img {
-  width: 50%;
-  padding: 20px;
+  width: 33%;
+  padding: 10px;
+}
+
+.threejs {
+  width: 33%;
+  padding: 10px;
 }

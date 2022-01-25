@@ -4,6 +4,7 @@ import "./project.css";
 //Project Image Imports
 import Oishii from "../../assets/Projects/Oishii.png";
 import Bizarr from "../../assets/Projects/bizarr.png";
+import ThreeDPortfolio from "../../assets/Projects/threejs.png";
 
 //Material Ui Imports
 // import Card from "@mui/material/Card";
@@ -25,6 +26,9 @@ const Projects = () => {
           target="_blank"
         >
           <img src={Bizarr} className="bizarr-img" />
+        </a>
+        <a href="https://github.com/gracelin95/Portfolio" target="_blank">
+          <img src={ThreeDPortfolio} className="threejs" />
         </a>
       </div>
     </div>
