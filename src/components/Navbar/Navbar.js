@@ -92,7 +92,7 @@ const Navbar = () => {
           <div className={classes.logoBox}>
             <Box component="img" className={classes.logo} src={Logo} />
           </div>
-          <Link to="/projects" style={{ textDecoration: "none" }}>
+          <Link to="../Projects/Projects" style={{ textDecoration: "none" }}>
             <Button variant="h6" className={classes.projects}>
               Projects
             </Button>

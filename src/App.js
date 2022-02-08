@@ -17,11 +17,11 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        {/* <Routes>
-          <Route path="/projects" component={Projects} />
-          <Route path="/workexperience" component={WorkExperience} />
-          <Route path="/contactme" component={Contact} />
-        </Routes> */}
+        <Routes>
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/workexperience" component={WorkExperience} />
+          <Route exact path="/contactme" component={Contact} />
+        </Routes>
         <div className="content">
           <img src={Banner} style={{ width: "100%", position: "relative" }} />
           <div className="icons">
