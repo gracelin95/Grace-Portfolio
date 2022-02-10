@@ -72,7 +72,7 @@ const Navbar = () => {
 
     window.scrollTo({
       left: 0,
-      top: location,
+      top: location - 60,
     });
   };
   const classes = useStyles();
