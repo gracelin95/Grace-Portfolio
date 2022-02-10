@@ -73,7 +73,7 @@ const Tech = () => {
             <td>
               <img
                 className="postgres-icon"
-                src="http://assets.stickpng.com/images/584815fdcef1014c0b5e497a.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/745px-Postgresql_elephant.svg.png"
               />
             </td>
             <td>Postgres </td>
