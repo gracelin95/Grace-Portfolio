@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="contactme">
       <div className="contact-header"> Contact Me! </div>
-      <form action="mailto:gracelin3295@gmail.com">
+      <form action="sendConfirmation.php" name="confirmationForm" method="post">
         <label for="name-company">Full Name & Company </label>
         <input
           type="text"
@@ -28,7 +28,11 @@ const Contact = () => {
         ></textarea>
 
         <Button className="contact-button">
-          <input type="submit" value="Submit" />
+          <input
+            type="submit"
+            value="Submit"
+            action="mailto:gracelin3295@gmail.com"
+          />
         </Button>
       </form>
     </div>
