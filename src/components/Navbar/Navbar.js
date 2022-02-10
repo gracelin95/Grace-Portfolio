@@ -108,40 +108,17 @@ const Navbar = () => {
           <div>
             {links.map((link) => {
               return (
-                <a href={link.url} key={link.id} onClick={handleClick}>
+                <a
+                  href={link.url}
+                  key={link.id}
+                  className="navbar-a"
+                  onClick={handleClick}
+                >
                   {link.text}
                 </a>
               );
             })}
           </div>
-          {/* <Button
-            component={Link}
-            to="/Projects"
-            variant="h6"
-            className={classes.projects}
-          >
-            Projects
-          </Button> */}
-          {/* <Button variant="h6" className={classes.projects} href="/projects">
-            Projects
-          </Button>
-          <Link to="/Projects" style={{ textDecoration: "none" }}>
-            <Button variant="h6" className={classes.projects}>
-              Projects
-            </Button>
-          </Link> 
-          {/* <Link to="/workexperience" style={{ textDecoration: "none" }}> */}
-          {/* <Button variant="h6" className={classes.work} url="#work">
-            {" "}
-            Work Experience
-          </Button>
-          {/* </Link> */}
-          {/* <Link to="/contactme" style={{ textDecoration: "none" }}>
-            <Button variant="h6" className={classes.contact}>
-              {" "}
-              Contact Me
-            </Button> */}
-          {/* </Link> */}
 
           <IconButton className={classes.menuButton}>
             <MenuIcon />
@@ -149,26 +126,6 @@ const Navbar = () => {
         </ToolBar>
       </AppBar>
     </div>
-    // <Nav className="navbar">
-    //   <NavLink to="/">
-    //     <h1>Logo</h1>
-    //   </NavLink>
-    //   <Bars />
-    //   <NavMenu>
-    //     <NavLink to="/home" activestyle>
-    //       Home
-    //     </NavLink>
-    //     <NavLink to="/WorkExperience" activestyle>
-    //       Work Experience
-    //     </NavLink>
-    //     <NavLink to="/Projects" activestyle>
-    //       Projects
-    //     </NavLink>
-    //     <NavLink to="/Contact" activestyle>
-    //       Contact Me
-    //     </NavLink>
-    //   </NavMenu>
-    // </Nav>
   );
 };
 

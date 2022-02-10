@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //component imports
 import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
-import WorkExperience from "./components/Work/WorkExperience";
+import Tech from "./components/Tech/Tech";
 import Contact from "./components/Contact/Contact";
 
 import Banner from "./assets/Banner.png";
@@ -35,8 +35,8 @@ function App() {
           <section id="projects">
             <Projects />
           </section>
-          <section id="work">
-            <WorkExperience />
+          <section id="tech">
+            <Tech />
           </section>
           <section id="contact">
             <Contact />

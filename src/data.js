@@ -11,8 +11,8 @@ export const links = [
   },
   {
     id: 3,
-    text: "Work",
-    url: "#work",
+    text: "Technology Stack",
+    url: "#tech",
   },
   {
     id: 4,
