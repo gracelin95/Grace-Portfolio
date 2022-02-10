@@ -17,12 +17,12 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <Routes>
+        {/* <Routes>
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/workexperience" component={WorkExperience} />
           <Route exact path="/contactme" component={Contact} />
-        </Routes>
-        <div className="content">
+        </Routes> */}
+        <div className="content" id="home">
           <img src={Banner} style={{ width: "100%", position: "relative" }} />
           <div className="icons">
             <a href="https://github.com/gracelin95">
@@ -32,8 +32,15 @@ function App() {
               <FaLinkedin size={32} style={{ color: "black" }} />
             </a>
           </div>
-          <Projects />
-          <WorkExperience />
+          <section id="projects">
+            <Projects />
+          </section>
+          <section id="work">
+            <WorkExperience />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
         </div>
       </div>
     </Router>

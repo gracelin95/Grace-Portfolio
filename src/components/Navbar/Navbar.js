@@ -1,5 +1,7 @@
 // import { Nav, NavLink, Bars, NavMenu } from "./NavBarElements";
+import "./navbar.css";
 import Logo from "../../assets/Logo/GrayLogo.png";
+import { links } from "../../data";
 
 //React Imports
 import React, { useEffect, useState } from "react";
@@ -62,6 +64,17 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Navbar = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    const target = e.target.getAttribute("href");
+    const location = document.querySelector(target).offsetTop;
+
+    window.scrollTo({
+      left: 0,
+      top: location,
+    });
+  };
   const classes = useStyles();
 
   //to control the state of the navbar color
@@ -92,23 +105,43 @@ const Navbar = () => {
           <div className={classes.logoBox}>
             <Box component="img" className={classes.logo} src={Logo} />
           </div>
-          <Link to="../Projects/Projects" style={{ textDecoration: "none" }}>
+          <div>
+            {links.map((link) => {
+              return (
+                <a href={link.url} key={link.id} onClick={handleClick}>
+                  {link.text}
+                </a>
+              );
+            })}
+          </div>
+          {/* <Button
+            component={Link}
+            to="/Projects"
+            variant="h6"
+            className={classes.projects}
+          >
+            Projects
+          </Button> */}
+          {/* <Button variant="h6" className={classes.projects} href="/projects">
+            Projects
+          </Button>
+          <Link to="/Projects" style={{ textDecoration: "none" }}>
             <Button variant="h6" className={classes.projects}>
               Projects
             </Button>
-          </Link>
-          <Link to="/workexperience" style={{ textDecoration: "none" }}>
-            <Button variant="h6" className={classes.work}>
-              {" "}
-              Work Experience
-            </Button>
-          </Link>
-          <Link to="/contactme" style={{ textDecoration: "none" }}>
+          </Link> 
+          {/* <Link to="/workexperience" style={{ textDecoration: "none" }}> */}
+          {/* <Button variant="h6" className={classes.work} url="#work">
+            {" "}
+            Work Experience
+          </Button>
+          {/* </Link> */}
+          {/* <Link to="/contactme" style={{ textDecoration: "none" }}>
             <Button variant="h6" className={classes.contact}>
               {" "}
               Contact Me
-            </Button>
-          </Link>
+            </Button> */}
+          {/* </Link> */}
 
           <IconButton className={classes.menuButton}>
             <MenuIcon />

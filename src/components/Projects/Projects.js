@@ -12,7 +12,7 @@ import ThreeDPortfolio from "../../assets/Projects/threejs.png";
 
 const Projects = () => {
   return (
-    <div>
+    <div className="testing-projects">
       <h2 className="headline"> Projects </h2>
       <div className="project-imgs">
         <a
