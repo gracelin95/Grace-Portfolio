@@ -108,14 +108,17 @@ const Navbar = () => {
           <div>
             {links.map((link) => {
               return (
-                <a
-                  href={link.url}
-                  key={link.id}
-                  className="navbar-a"
-                  onClick={handleClick}
-                >
-                  {link.text}
-                </a>
+                <Button>
+                  {" "}
+                  <a
+                    href={link.url}
+                    key={link.id}
+                    className="navbar-a"
+                    onClick={handleClick}
+                  >
+                    {link.text}
+                  </a>
+                </Button>
               );
             })}
           </div>

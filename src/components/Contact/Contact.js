@@ -5,7 +5,7 @@ import Button from "@material-ui/core/Button";
 const Contact = () => {
   return (
     <div className="contactme">
-      <div className="testing"> Contact Me! </div>
+      <div className="contact-header"> Contact Me! </div>
       <form action="mailto:gracelin3295@gmail.com">
         <label for="name-company">Full Name & Company </label>
         <input
