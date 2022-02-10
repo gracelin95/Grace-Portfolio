@@ -13,7 +13,7 @@ import ThreeDPortfolio from "../../assets/Projects/threejs.png";
 const Projects = () => {
   return (
     <div>
-      <h2 className="headline"> Projects </h2>
+      <div className="headline"> Projects </div>
       <div className="project-imgs">
         <a
           href="https://github.com/Winternet-is-coming/GraceShopper"

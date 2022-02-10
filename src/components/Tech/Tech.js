@@ -5,7 +5,7 @@ const Tech = () => {
   return (
     <div>
       {" "}
-      <h1 className="tech-header"> Technology Stack</h1>
+      <div className="tech-header"> Technology Stack</div>
       <div>
         <table
           className="tech-tables1"

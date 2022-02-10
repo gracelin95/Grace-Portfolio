@@ -123,9 +123,9 @@ const Navbar = () => {
             })}
           </div>
 
-          <IconButton className={classes.menuButton}>
+          {/* <IconButton className={classes.menuButton}>
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
         </ToolBar>
       </AppBar>
     </div>

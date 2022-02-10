@@ -1,6 +1,8 @@
 .contact-header {
   padding-top: 20px;
-  font-size: 20px;
+  padding-bottom: 15px;
+  font-size: 25px;
+  text-align: center;
 }
 
 input,

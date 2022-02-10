@@ -5,7 +5,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="footer">
       <div className="icons">
         <a href="https://github.com/gracelin95">
           <FaGithub size={32} style={{ color: "black" }} />{" "}
@@ -14,7 +14,7 @@ const Footer = () => {
           <FaLinkedin size={32} style={{ color: "black" }} />
         </a>
       </div>
-      <h4 className="copyright"> © Grace Lin 2022 </h4>
+      <div className="copyright"> © Grace Lin 2022 </div>
     </div>
   );
 };
