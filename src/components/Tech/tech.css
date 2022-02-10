@@ -1,6 +1,60 @@
-.testing1 {
+/* .testing1 {
   background-color: blueviolet;
   width: 100%;
   height: 400px;
   font-size: 50px;
+} */
+
+.js-list {
+  /* padding-left: 10px; */
+}
+
+.javascript-icon {
+  width: 40px;
+  justify-content: space-between;
+}
+
+.html-css {
+  width: 60px;
+  justify-content: space-between;
+}
+
+.react-icon {
+  width: 40px;
+}
+
+.redux-icon {
+  width: 40px;
+}
+
+.node-icon {
+  width: 40px;
+}
+
+.postgres-icon {
+  width: 40px;
+}
+
+.sql-icon {
+  width: 40px;
+}
+
+.webpack-icon {
+  width: 40px;
+}
+
+.firebase-icon {
+  width: 40px;
+}
+
+.mui-icon {
+  width: 40px;
+}
+
+.ts-icon {
+  width: 40px;
+}
+
+.python-icon {
+  width: 40px;
 }
