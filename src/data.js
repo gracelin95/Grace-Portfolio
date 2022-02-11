@@ -6,16 +6,21 @@ export const links = [
   },
   {
     id: 2,
+    text: "About me",
+    url: "#aboutme",
+  },
+  {
+    id: 3,
     text: "Projects",
     url: "#projects",
   },
   {
-    id: 3,
+    id: 4,
     text: "Technology Stack",
     url: "#tech",
   },
   {
-    id: 4,
+    id: 5,
     text: "Contact Me",
     url: "#contact",
   },
