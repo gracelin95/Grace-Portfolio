@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //component imports
 import Navbar from "./components/Navbar/Navbar";
+import Aboutme from "./components/Aboutme/Aboutme";
 import Projects from "./components/Projects/Projects";
 import Tech from "./components/Tech/Tech";
 import Contact from "./components/Contact/Contact";
@@ -18,7 +19,9 @@ function App() {
 
         <div className="content" id="home">
           <img src={Banner} style={{ width: "100%", position: "relative" }} />
-
+          <section id="aboutme">
+            <Aboutme />
+          </section>
           <section id="projects">
             <Projects />
           </section>

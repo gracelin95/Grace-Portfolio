@@ -1,0 +1,18 @@
+.aboutme-header {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.about-me-desc {
+  width: 70%;
+  font-size: 17px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+.child-div {
+  text-align: center;
+  line-height: 30px;
+}
