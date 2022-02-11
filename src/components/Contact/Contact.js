@@ -55,9 +55,9 @@ const Contact = () => {
         <Button className="contact-button">
           <input type="submit" value="Submit" disabled={state.submitting} />
         </Button>
-        <div id="status" class="error">
+        {/* <div id="status" class="error">
           Success
-        </div>
+        </div> */}
       </form>
     </div>
   );

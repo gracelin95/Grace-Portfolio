@@ -1,10 +1,20 @@
 .footer {
-  padding-top: 20px;
+  padding-top: 10px;
+  border-top: #73c2be;
+  border-top-style: solid;
 }
 
 .icons {
   float: left;
   padding-left: 10px;
+}
+
+.github-icon {
+  margin-right: 5px;
+}
+
+.linkedin-icon {
+  margin-left: 3px;
 }
 
 .copyright {
